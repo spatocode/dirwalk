@@ -1,0 +1,28 @@
+{
+  "name": "fs-walk",
+  "version": "0.0.0",
+  "description": "Walks the file system",
+  "author": "Ekene Izukanne <ekeneizukanne@gmail.com>",
+  "homepage": "https://github.com/spatocode/fs-walk#README",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spatocode/fs-walk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spatocode/fs-walk/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "fs",
+    "fs-walk",
+    "dir",
+    "walk",
+    "file",
+    "directory"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha"
+  }
+}
