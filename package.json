@@ -1,20 +1,21 @@
 {
-  "name": "fs-walk",
+  "name": "dirwalk",
   "version": "0.0.0",
-  "description": "Walks the file system",
+  "description": "Directory tree traversal in nodejs",
   "author": "Ekene Izukanne <ekeneizukanne@gmail.com>",
-  "homepage": "https://github.com/spatocode/fs-walk#README",
+  "homepage": "https://github.com/spatocode/dirwalk#README",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spatocode/fs-walk.git"
+    "url": "git+https://github.com/spatocode/dirwalk.git"
   },
   "bugs": {
-    "url": "https://github.com/spatocode/fs-walk/issues"
+    "url": "https://github.com/spatocode/dirwalk/issues"
   },
   "license": "MIT",
   "keywords": [
     "fs",
-    "fs-walk",
+    "dirwalk",
+    "traversal"
     "dir",
     "walk",
     "file",
