@@ -5,7 +5,7 @@ Directory tree traversal in nodejs
 ## Installation
 
 ```sh
-$ npm install dirwalk
+$ npm install @spatocode/dirwalk
 ```
 
 ## Usage
