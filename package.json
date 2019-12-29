@@ -1,5 +1,5 @@
 {
-  "name": "dirwalk",
+  "name": "@spatocode/dirwalk",
   "version": "0.0.0",
   "description": "Directory tree traversal in nodejs",
   "author": "Ekene Izukanne <ekeneizukanne@gmail.com>",
@@ -15,7 +15,7 @@
   "keywords": [
     "fs",
     "dirwalk",
-    "traversal"
+    "traversal",
     "dir",
     "walk",
     "file",

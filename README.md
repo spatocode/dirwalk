@@ -12,7 +12,7 @@ $ npm install dirwalk
 
 
 ```js
-const dirwalk = require("dirwalk");
+const dirwalk = require("@spatocode/dirwalk");
 
 // Asynchronous function
 dirwalk.walk("path/to/dir", (err, path, info) => {
