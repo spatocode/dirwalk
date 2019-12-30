@@ -1,6 +1,6 @@
 {
   "name": "@spatocode/dirwalk",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Directory tree traversal in nodejs",
   "author": "Ekene Izukanne <ekeneizukanne@gmail.com>",
   "homepage": "https://github.com/spatocode/dirwalk#README",
