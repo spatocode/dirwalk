@@ -2,6 +2,10 @@ var fs = require("fs");
 var path = require("path");
 
 module.exports = function (path) {
+    var info = fs.lstatSync(path);
+    if (info.isFile()) {
+        throw new Error("Cannot traverse a file. Path should be a directory not file.");
+    }
     return traverse(path);
 };
 

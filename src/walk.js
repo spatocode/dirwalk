@@ -7,6 +7,10 @@ module.exports = function (path, walkFn) {
             walkFn(err, path, stats);
         }
 
+        if (stats.isFile()) {
+            throw new Error("Cannot traverse a file. Path should be a directory not file.");
+        }
+
         traverse(path, stats, walkFn);
     });
 };
