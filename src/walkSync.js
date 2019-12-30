@@ -2,25 +2,27 @@ var fs = require("fs");
 var path = require("path");
 
 module.exports = function (path) {
+    var paths = [];
     var info = fs.lstatSync(path);
     if (info.isFile()) {
         throw new Error("Cannot traverse a file. Path should be a directory not file.");
     }
-    return traverse(path);
+    traverse(path, info, paths);
+    return paths
 };
 
-var files = [];
-function traverse (root) {
-    files.push(root);
-
-    if (fs.lstatSync(root).isDirectory()) {
-        var filenames = fs.readdirSync(root);
-        for (var i = 0; i < filenames.length; i++) {
-            var file = path.join(root, filenames[i]);
-            var info = fs.lstatSync(file);
-            traverse(file, info);
-        }
+function traverse (root, stats, paths) {
+    if (stats.isFile()) {
+        return paths.push(root);
     }
 
-    return files;
+    var filenames = fs.readdirSync(root);
+    paths.push(root);
+    for (var i = 0; i < filenames.length; i++) {
+        var file = path.join(root, filenames[i]);
+        var info = fs.lstatSync(file);
+        traverse(file, info, paths);
+    }
+
+    return paths;
 }
